@@ -1,0 +1,81 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Git Branch Management</title>
+</head>
+<body>
+
+    <h1>Git Branch Management</h1>
+
+    <h2>Aim</h2>
+    <p>
+        To create a Git repository and develop features using
+        multiple branches and merge them into the main branch.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Home Page</li>
+        <li>Login Page</li>
+        <li>Contact Page</li>
+    </ul>
+
+    <h2>Git Commands</h2>
+
+    <h3>1. Initialize Repository</h3>
+    <pre>git init</pre>
+
+    <h3>2. Create Main Branch</h3>
+    <pre>git branch -M main</pre>
+
+    <h3>3. Create Login Feature Branch</h3>
+    <pre>git switch -c login-feature</pre>
+
+    <h3>4. Add and Commit Changes</h3>
+    <pre>
+git add .
+git commit -m "Added login feature"
+    </pre>
+
+    <h3>5. Switch to Main Branch</h3>
+    <pre>git switch main</pre>
+
+    <h3>6. Merge Login Feature</h3>
+    <pre>git merge login-feature</pre>
+
+    <h3>7. Create Contact Feature Branch</h3>
+    <pre>git switch -c contact-feature</pre>
+
+    <h3>8. Commit Contact Feature</h3>
+    <pre>
+git add .
+git commit -m "Added contact feature"
+    </pre>
+
+    <h3>9. Merge Contact Feature</h3>
+    <pre>
+git switch main
+git merge contact-feature
+    </pre>
+
+    <h2>Procedure</h2>
+    <ol>
+        <li>Create a Git repository.</li>
+        <li>Create separate branches for different features.</li>
+        <li>Develop and commit changes in each branch.</li>
+        <li>Switch to the main branch.</li>
+        <li>Merge the feature branches into the main branch.</li>
+        <li>Verify the changes using git log.</li>
+    </ol>
+
+    <h2>Result</h2>
+    <p>
+        Thus, a Git repository was created, features were
+        developed using multiple branches, and the branches
+        were merged into the main branch successfully.
+    </p>
+
+</body>
+</html>
+```
